@@ -135,7 +135,7 @@
                                 <li>Javascript</li>
                                 <h3>Certificates</h3>
                                 <li><a href='https://www.coursera.org/account/accomplishments/certificate/FAY42GZ5V3JS'>Programming for Everybody (Getting Started with Python)</a></li>
-                                <h5 class='edu-years'><Coursera <br/>
+                                <h5 class='edu-years'>Coursera <br/>
                                 Issued Jun 2020. No Expiration Date 
                                 </h5>
                             </ul>
