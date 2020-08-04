@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <style>
-            img{
+            .img{
                 border:3px solid white;
                 border-radius: 140px;
                 width:250px;
@@ -54,6 +54,82 @@
 
             }
 
+            /* IMAGE GRIDING RESPONSIVE */
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .header {
+            text-align: center;
+            padding: 32px;
+            }
+
+            .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            }
+
+            /* Create four equal columns that sits next to each other */
+            .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+            }
+
+            .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            }
+
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+            }
+
+            img{
+                width:100%
+            }
+
+            #outer-div {
+                width: 100%;
+                text-align: center;
+                
+            }
+
+            #inner-div {
+                display: inline-block;
+                margin: 0 auto;
+                padding: 3px;
+                
+            }
+
+           
+
+            img:hover{
+                -ms-transform: scale(2); /* IE 9 */
+                -webkit-transform: scale(2); /* Safari 3-8 */
+                transform: scale(2); 
+            }
+
         </style>
     </head>
     
@@ -75,7 +151,7 @@
                 <div class="col-md-10 col-md-offset-1 col-l-10 col-l-offset-1 col-xs-12 ;center-div"  >
                     <div class='banner' >
                         
-                        <img src='arzoo.jpg' />                  
+                        <img src='arzoo.jpg' class='img' />                  
                         <h1 class='photo-spacing'>ARZOO BAPNA</h1>                    
                         <h3 class='photo-spacing'>Udaipur, Rajasthan</h3>
                         <h3 class='photo-spacing'>+91 1234567890</h3>
@@ -105,14 +181,14 @@
                                 <h5>Bachelor of Technology-BTech, Computer Science</h5>
                                 <h5 class='edu-years' >2020-2024</h5>
 
-                                <li>St. Anthony's Sr. Sec. School</li>
+                                <li><a href=#11th>St. Anthony's Sr. Sec. School</a></li>
                                 <h5>11th and 12th class, PCM+CS</h5>
-                                <h5 class='edu-years'>2018-2020 <br/>
+                                <h5 class='edu-years'>2016-2018 <br/>
                                     Activities and Societies: Music Band(violinist)
 
                                 </h5>
 
-                                <li>MDS Sr. Sec. School</li>
+                                <li><a href=#10th>MDS Sr. Sec. School</a></li>
                                 <h5>9th and 10th class studied in affiliation with <u>Resonance </u></h5>
                                 <h5 class='edu-years'>2016-2018 <br/>
                                     Activities and Socities: First Batch Student, Basketball team, Music Band (violinist)
@@ -140,13 +216,37 @@
                                 <li>HTML+css+Bootstrap</li>
                                 <li>Javascript</li>
                                 <h3>Certificates</h3>
-                                <li><a href='https://www.coursera.org/account/accomplishments/certificate/FAY42GZ5V3JS'>Programming for Everybody (Getting Started with Python)</a></li>
-                                <h5 class='edu-years'><Coursera <br/>
+                                <li><a href= #python>Programming for Everybody (Getting Started with Python)</a></li>
+                                <h5 class='edu-years'>Coursera <br/>
                                 Issued Jun 2020. No Expiration Date 
                                 </h5>
                             </ul>
                         </h4>
 
+                    </div>
+
+                    <hr>
+
+                    <center><h2>CERTIFICATES</h2> </center>
+                    <div class='row' >
+                        <div class='column' id='inner-div' >
+                            
+                            <img src='coursera-python.png' id='python'>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <center><h2>HIGHSCHOOL REPORT CARDS</h2></center> 
+                    <div class='row' id='outer-div'>                                                   
+                        <div class='column' id='inner-div'>
+                            <img src='11th report card.png' id='11th'/>
+                        </div>
+                        <div class='column' id='inner-div'>
+                            <img src='10th report card.png' id='10th' />
+                            <img src='9th report card.png' id='9th' />
+                        </div>     
+                           
                     </div>
 
                     <hr>
