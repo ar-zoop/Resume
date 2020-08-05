@@ -5,11 +5,16 @@
             Arzoo's resume
         </title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <style>
+            input,textarea{
+                padding:5px;
+                
+            }
+
             .dp{
                 border:3px solid white;
                 border-radius: 140px;
@@ -226,7 +231,7 @@
                     <div class='row' >
                         <div class='column' id='inner-div' >
                             
-                            <img src='coursera-python.png' id='python' class='img'>
+                            <img src='coursera-python.PNG' id='python' class='img'>
                         </div>
                     </div>
 
@@ -235,17 +240,17 @@
                     <center><h2>HIGHSCHOOL REPORT CARDS</h2></center> 
                     <div class='row' id='outer-div'>                                                   
                         <div class='column' id='inner-div'>
-                            <img src='11th report card.png' id='11th' class='img' />
+                            <img src='11th report card.PNG' id='11th' class='img' />
                         </div>
                         <div class='column' id='inner-div'>
-                            <img src='10th report card.png' id='10th' class='img' />
-                            <img src='9th report card.png' id='9th' class='img' />
+                            <img src='10th report card.PNG' id='10th' class='img' />
+                            <img src='9th report card.PNG' id='9th' class='img'  />
                         </div>     
                            
                     </div>
 
                     <hr>
-
+<!-- 
                     <div class='well hide'>
                         <center>
                             <h2>CONTACT</h2>
@@ -267,6 +272,21 @@
                                 </tr>
                             </table>
                         </form>
+                    </div> -->
+
+                    <div class='well'>
+                        <center>
+                            <h2>CONTACT</h2>
+                        
+                        <form >
+                            <h4><input type='text' placeholder='Your Name'></h4> 
+                            <h4><input type='email' placeholder="Your email id"></h4> <br/>
+                            <h4><textarea   placeholder='Your message'></textarea></h4>
+                            <h4><input type='submit' value='Send' id='email' onclick=clear-field()></h4>
+                            
+                        </form>
+                        </center>
+
                     </div>
 
 
